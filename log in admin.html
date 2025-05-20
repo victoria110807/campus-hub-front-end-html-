@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Connexion - CampusHub</title>
+</head>
+<body>
+   <div class="login-container">
+    <!-- taille du logo à modifier selon la convenance -->
+  <form action="#" method="post">
+    <img src="ead-logo.jpg" alt="Logo EAD" width="60" />
+
+    <p>
+      <label for="nom">Nom(s) & Prénom(s)</label><br>
+      <input type="text" id="nom" name="nom">
+    </p>
+
+    <p>
+      <label for="eadid">EAD ID</label><br>
+      <input type="text" id="eadid" name="eadid">
+    </p>
+
+    <p>
+      <label for="mdp">Mot de passe</label><br>
+      <input type="password" id="mdp" name="mdp">
+    </p>
+
+    <p>
+      <label for="fonction">Fonction</label><br>
+      <select id="fonction" name="fonction">
+      <option value="" disabled selected>Fonction</option>
+
+        <option value="SG/AEA">SG/AEA</option>
+        <option value="enseignant">Enseignant</option>
+        <option value="DACC">DACC</option>
+        <option value="DG">DG</option>
+        <option value="scolarité">Scolarité</option>
+        <option value="Bibliothèque">Bibliothèque</option>
+      </select>
+    </p>
+
+    <p>
+      <button type="submit">Log In</button>
+    </p>
+
+    <p><a href="log in etudiant.html">se connecter en tant qu'étudiant</a></p>
+  </form>
+</div>
+</body>
+</html>
