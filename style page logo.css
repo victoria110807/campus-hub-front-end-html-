@@ -1,0 +1,31 @@
+body {
+  background-color: #ffffff; /* Blanc pur */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+.logo {
+  width: 600px; /* Taille réduite du logo */
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background-color: #ffffff;
+}
+
+.signature {
+  font-weight: bold;
+  color: #1774c8;
+  opacity: 0.6; /* 60% de visibilité */
+  width: 1000px;
+  margin: 20px auto 0;
+}
+
