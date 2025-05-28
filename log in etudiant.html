@@ -3,59 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <title>Connexion EAD</title>
+  <link rel="stylesheet" href="log_inCSS.css">
+  <link rel="stylesheet" href="">
 </head>
 <body>
   <div class="login-container">
-    <!-- taille du logo à modifier selon la convenance -->
-    
-     <form action="#" method="post">
-    <img src="ead-logo.jpg" alt="Logo EAD" width="60" />
-
-    <p>
-      <label for="nom">Nom(s) & Prénom(s)</label><br>
-      <input type="text" id="nom" name="nom">
-    </p>
-
-    <p>
-      <label for="eadid">EAD ID</label><br>
-      <input type="text" id="eadid" name="eadid">
-    </p>
-
-    <p>
-      <label for="mdp">Mot de passe</label><br>
-      <input type="password" id="mdp" name="mdp">
-    </p>
-   <p>
-      <!-- creation de la liste déroulante -->
-      <select name="option" required>
-        <option value="" disabled selected>OPTION</option>
-        <option value="GLAR">GLAR</option>
-        <option value="GC">GC</option>
-        <option value="EMI">EMI</option>
-        <option value="RT">RT</option>
-        <option value="GMP">GMP</option>
-      </select><br>
-      </p>
-
-    <p>
-      <select name="niveau" required>
-        <option value="" disabled selected>NIVEAU</option>
-        <option value="licence1">Licence 1</option>
-        <option value="licence2">Licence 2</option>
-        <option value="licence3">Licence 3</option>
-        <option value="master1">Master 1</option>
-        <option value="master2">Master 2</option>
-      </select><br>
-     </p>
-
-     <p> 
- 	<button type="submit">Log In</button>
-	</p>
-     
-           <p><a href="log in admin.html">se connecter en tant qu'administrateur</a</p>
-	</form>
-  </div>
+        <div class="logo">
+            <img src="logo_EAD-removebg-preview (1).png " alt="Logo EAD" width="100" />
+        </div>
+        <form action="#" method="post">
+            <p>
+                <label for="nom">Nom(s) & Prénom(s)</label>
+                <input type="text" id="nom" name="nom" required>
+            </p>
+            <p>
+                <label for="eadid">EAD ID</label>
+                <input type="text" id="eadid" name="eadid" required>
+            </p>
+            <p>
+                <label for="mdp">Mot de passe</label>
+                <input type="password" id="mdp" name="mdp" required>
+            </p>
+            <p>
+                <label for="option">Fonction</label>
+                <select name="option" id="option" required>
+                    <option value="" disabled selected>OPTION</option>
+                    <option value="GLAR">GLAR</option>
+                    <option value="GC">GC</option>
+                    <option value="EMI">EMI</option>
+                    <option value="RT">RT</option>
+                    <option value="GMP">GMP</option>
+                </select>
+            </p>
+            <p>
+                <label for="niveau">Niveau</label>
+                <select name="niveau" id="niveau" required>
+                    <option value="" disabled selected>NIVEAU</option>
+                    <option value="licence1">Licence 1</option>
+                    <option value="licence2">Licence 2</option>
+                    <option value="licence3">Licence 3</option>
+                    <option value="master1">Master 1</option>
+                    <option value="master2">Master 2</option>
+                </select>
+            </p>
+            <p>
+                <button type="submit">Log In</button>
+            </p>
+            <p>
+                <a href="log in admin.html">Se connecter en tant qu'administrateur</a>
+            </p>
+        </form>
+    </div>
+</body>
 </body>
 </html>
-
 

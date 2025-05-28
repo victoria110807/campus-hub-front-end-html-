@@ -1,0 +1,137 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8faff;
+  color: #222;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(58,182,255,0.07);
+}
+
+.nav-logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-menu {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.nav-menu button {
+  background: #3ab6ff;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 22px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-weight: 500;
+  box-shadow: 0 2px 8px #3ab6ff22;
+}
+
+.nav-menu button:hover,
+.nav-menu .animat {
+  background: #2699e6;
+}
+
+.nav-user {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* MAIN */
+main {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(58,182,255,0.06);
+  text-align: center;
+}
+
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 18px;
+  color: #3ab6ff;
+}
+
+main p {
+  margin-bottom: 14px;
+  font-size: 1.1rem;
+}
+
+main img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 18px 0;
+  border: 3px solid #3ab6ff33;
+}
+
+main div p {
+  font-size: 1.1rem;
+  margin: 6px 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  main {
+    max-width: 95vw;
+    padding: 12px;
+  }
+  .navbar {
+    padding: 12px 8px;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: row;         /* <-- reste en ligne */
+    align-items: center;
+    gap: 0;
+    padding: 8px;
+  }
+  .nav-logo {
+    flex: 1;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .nav-menu {
+    flex: 2;
+    gap: 8px;
+    margin-bottom: 0;
+  }
+  .nav-user {
+    flex: 1;
+    justify-content: flex-end;
+    margin: 0;
+  }
+  .nav-menu button {
+    padding: 8px 8px;
+    font-size: 0.95rem;
+  }
+}
