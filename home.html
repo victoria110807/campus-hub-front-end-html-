@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Home_CSS.css">
   <meta charset="UTF-8">
   <title>CampusHub - Accueil</title>
+  <link rel="stylesheet" href="">
 </head>
 <body>
 
-  <header>
-   <!-- Barre de navigation -->
-  <nav>
-    <!-- Logo EAD -->
-    <img src="ead-logo.jpg" alt="Logo EAD" width="40">
+  <header class="menu">
 
-    <!-- Espacement -->
-    &nbsp;&nbsp;&nbsp;&nbsp;
+  
+    <nav class="navbar">
+  <!-- Logo à gauche -->
+  <div class="nav-logo">
+    <img src="logo_EAD-removebg-preview (1).png" alt="Logo EAD" width="40">
+  </div>
 
-    <!-- Liens de navigation -->
-    <span>
-      <a href="home.html">Home</a>
-      &nbsp;&nbsp;&nbsp;
-      <a href="about.html">About Us</a>
-      &nbsp;&nbsp;&nbsp;
-	<!-- je sais pas ou mène le lien campus hub -->
-      <a href="#"><strong>CampusHub</strong></a>
-    </span>
+  <!-- Boutons au centre -->
+  <div class="nav-menu">
+    <button class="animat" onclick="location.href='home.html'">Home</button>
+    <button onclick="location.href='about.html'">About Us</button>
+    <button onclick="location.href='campus_Hub.html'">CampusHub</button>
+  </div>
 
-    <!-- Espacement -->
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<!-- Icône utilisateur avec + (bleu clair #3ab6ff) -->
-<svg width="28" height="28" viewBox="0 0 24 24" fill="#3ab6ff" xmlns="http://www.w3.org/2000/svg">
-  <!-- Cercle pour la tête -->
-  <path d="M12 2a5 5 0 100 10 5 5 0 000-10z"/>
-  <!-- Corps simplifié -->
-  <path d="M12 14c-4 0-8 2-8 4v2h16v-2c0-2-4-4-8-4z"/>
-  <!-- Signe + à droite de l'utilisateur -->
-  <path d="M20 2v2h-2v2h2v2h2V6h2V4h-2V2h-2z"/>
-</svg>
+  <!-- Icône utilisateur à droite -->
+  <div class="nav-user">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="#3ab6ff" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2a5 5 0 100 10 5 5 0 000-10z"/>
+      <path d="M12 14c-4 0-8 2-8 4v2h16v-2c0-2-4-4-8-4z"/>
+      <path d="M20 2v2h-2v2h2v2h2V6h2V4h-2V2h-2z"/>
+    </svg>
+  </div>
+</nav>
 
   </header>
 
